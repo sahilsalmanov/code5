@@ -1,29 +1,353 @@
-nav {
-    position: fixed;
-    background-color: white;
-    width: 102%;
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body {
+    margin: 0;
+ }
+ nav {
+   height: 80px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: fixed;
+   width: 100%;
+   background-color: white;
+}
+nav .main {
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    margin-top: -10px;
-    margin-left: -10px;
-    margin-right: -10px;
+    
 }
-.left {
-    background-color: red;
-    align-items: center;
+nav .left {
+    margin-top: 5px;
 }
-ul {
+nav ul {
     display: flex;
     list-style-type: none;
+    justify-content: space-around;
 }
-li {
-    padding: 16px;
+nav li {
+    padding: 10px;
+}
+.section1 {
+    height: 1000px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url('https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-masthead.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.section1 .top {
+    margin-top: 100px;
+}
+.section1 .top h1 {
+    font-size: 90px;
+    color: #B9B9B9;
+    letter-spacing: 10px;
+}
+.section1 .top p {
+    display: flex;
+    color: black;
+    justify-content: center;
+    text-align: center;
+}
+.section1 .top button {
+    display: flex;
+    margin: auto;
+    padding: 20px 30px;
+    background-color: #64A19D;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-top: 30px;
+}
+.section1 .bottom {
+    width: 50%;
+}
+.section1  .bottom h3 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 13px;
+} 
+.section1  .bottom p {
+    margin: auto;
+    color: grey;
+    text-align: center;
+}
+.section2 {
+    height: 400px;
+    background-image: url('https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/ipad.png');
+   background-repeat: no-repeat;
+   background-color: black;
+}
+.section3 {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.section3 .left {
+    width: 60%;
+}
+.section3 img {
+    width: 100%;
+    height: 400px;
+}
+.section3 .right {
+    height: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    text-align: center;
+}
+.section3 .right .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section3 .right .center h2 {
+    margin-bottom: 10px;
+}
+.section4 {
+    height: 600px;
+    background-color: red;
+    width: 81%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.section4 .top {
+    display: flex;
+}
+.section4 .bottom {
+    display: flex;
+}
+.section4 .top-left {
+    width: 50%;
+    height: 300px;
+    background-color: red;
+}
+.section4 .top-left img  {
+    width: 100%;
+    height: 300px;
+}
+.section4 .top-right {
+    width: 50%;
+    height: 300px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.section4 .bottom-left {
+    width: 50%;
+    height: 300px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.section4 .bottom-right {
+    width: 50%;
+    height: 300px;
+    background-color: blue;
+}
+.section4 .bottom-right img {
+    width: 100%;
+    height: 300px
+}
+.text {
+    width: 80%;
+    margin: auto;
     color: gray;
 }
-section {
-    margin-left: -10px;
-    margin-right: -10px;
-    background-image: url('https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-masthead.jpg');
-    width: 103%;
-    height: 900px;
+.text h2 {
+    color: white;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
 }
+.text p {
+    text-align: center;
+}
+.section5 {
+    background-image: url('https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-signup.jpg');
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,0.6);
+    
+}
+.section5 .top {
+    height: 500px;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.section5 .top .center {
+    width: 95%;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.section5 .top .center input {
+    width: 60%;
+    height: 60px;
+    border-radius: 10px;
+}
+.section5 .top .center button {
+    width: 30%;
+   height: 60px;
+   background-color: #567E7B;
+   color: white;
+   border-radius: 5px;
+   border: none;
+}
+.section5 .bottom {
+    height: 500px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section5 .main {
+    height: 200px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.section5 .bottom .part {
+   width: 27%;
+   background-color: white;
+   border-radius: 5px;
+}
+.section5 .bottom .part-center {
+    height: 180px;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #64A19D;
+}
+
+.section5 .bottom .part-center .text-primary.mb-2 {
+    width: 10%;
+    height: 60px;
+    margin: 0 auto;
+
+}
+.section5 .bottom .part-center .green-line {
+    height: 3px;
+    width: 20%;
+    background-color: #64A19D;
+    margin: 0 auto;
+    margin-top: 10px;
+} 
+.section5 .bottom .part-center p {
+   color: gray;
+}
+.section5 .bottom .part-center h4 {
+    color: black;
+    font-weight: 400;
+ }
+ .section5 .bottom .part-center a {
+    color: gray;
+    text-decoration: none;
+ }
+
+ footer {
+    width: 100%;
+    color: white;
+    background-color: black;
+    height: 200px;
+ }
+ footer .center-text {
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    color: gray;
+ }
+ footer .icons {
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+footer .icons .center-icons {
+    display: flex;
+}
+footer .icons .center-icons .each {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(26,26,26);
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .fa-brands {
+    color: rgb(90,90,90 );
+}
+
+
+
+
+
+/* 
+.bottom {
+    width: 40%;
+}
+/* .white {
+    color: white;
+}
+.black {
+    color: #828686;
+}
+
+} */  
+/* 
+.gridContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+     background-color: yellow;
+   background-color: yellow;
+    padding: 20px;
+    gap: 20px 20px;
+}
+.gridItem {
+    background-color: aqua;
+    padding: 10px;
+    border :1px solid black;
+    text-align: center;
+}
+.item1 {
+    grid-column-start: 1;
+    grid-row-end: 4;
+}  */
