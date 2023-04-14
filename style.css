@@ -1,0 +1,29 @@
+nav {
+    position: fixed;
+    background-color: white;
+    width: 102%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.left {
+    background-color: red;
+    align-items: center;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+}
+li {
+    padding: 16px;
+    color: gray;
+}
+section {
+    margin-left: -10px;
+    margin-right: -10px;
+    background-image: url('https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-masthead.jpg');
+    width: 103%;
+    height: 900px;
+}
