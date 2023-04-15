@@ -188,6 +188,10 @@ nav li {
 }
 .section5 {
     background-image: url('https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-signup.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
     height: 1000px;
     display: flex;
     flex-direction: column;
@@ -318,36 +322,3 @@ footer .fa-brands {
 
 
 
-
-
-/* 
-.bottom {
-    width: 40%;
-}
-/* .white {
-    color: white;
-}
-.black {
-    color: #828686;
-}
-
-} */  
-/* 
-.gridContainer {
-    display: grid;
-    grid-template-columns: auto auto auto;
-     background-color: yellow;
-   background-color: yellow;
-    padding: 20px;
-    gap: 20px 20px;
-}
-.gridItem {
-    background-color: aqua;
-    padding: 10px;
-    border :1px solid black;
-    text-align: center;
-}
-.item1 {
-    grid-column-start: 1;
-    grid-row-end: 4;
-}  */
